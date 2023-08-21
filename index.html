@@ -14,7 +14,7 @@
     <div class="h-100 d-flex justify-content-center align-items-center">
       <div style="margin-top: 40vh;">
         <h1 id="qts_no" style="text-align: center; color: red;">Question no</h1>
-        <h1 style="text-align: center;" id="qts">Question</h1>
+        <h1  style="text-align: center;" id="qts">Question</h1>
       </div>
     </div>
 
@@ -59,6 +59,8 @@
             let data = change.doc.data();
 
             document.getElementById("qts_no").innerHTML = data.no
+            document.getElementById("qts").innerHTML = data.question
+
             console.log("Modified city: ", change.doc.data());
 
           }
